@@ -53,9 +53,16 @@ class Commande
     private $type_ceremonie;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Panier::class, inversedBy="commande")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="commandes")
      */
-    private $panier;
+    private $user;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Menu::class, inversedBy="commandes")
+     */
+    private $menu;
+
+  
 
     public function getId(): ?int
     {
@@ -146,15 +153,29 @@ class Commande
         return $this;
     }
 
-    public function getPanier(): ?Panier
+    public function getUser(): ?User
     {
-        return $this->panier;
+        return $this->user;
     }
 
-    public function setPanier(?Panier $panier): self
+    public function setUser(?User $user): self
     {
-        $this->panier = $panier;
+        $this->user = $user;
 
         return $this;
     }
+
+    public function getMenu(): ?Menu
+    {
+        return $this->menu;
+    }
+
+    public function setMenu(?Menu $menu): self
+    {
+        $this->menu = $menu;
+
+        return $this;
+    }
+
+
 }
