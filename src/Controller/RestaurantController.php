@@ -17,4 +17,13 @@ class RestaurantController extends AbstractController
     {
         return $this->render('restaurant/index.html.twig');
     }
+
+    /**
+     * @Route("/", name="restaurant_show", methods={"GET"})
+     */
+
+    public function show(): Response
+    {
+        return $this->render('restaurant/show.html.twig');
+    }
 }
