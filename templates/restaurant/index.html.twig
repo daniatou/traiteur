@@ -1,43 +1,97 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Restaurant index{% endblock %}
+{% block title %}Restaurant index
+{% endblock %}
 
 {% block body %}
-    <h1>Restaurant index</h1>
+	<section
+		id="banner">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Description</th>
-                <th>Adresse</th>
-                <th>Image</th>
-                <th>Contact</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for restaurant in restaurants %}
-            <tr>
-                <td>{{ restaurant.id }}</td>
-                <td>{{ restaurant.nom }}</td>
-                <td>{{ restaurant.description }}</td>
-                <td>{{ restaurant.adresse }}</td>
-                <td>{{ restaurant.image }}</td>
-                <td>{{ restaurant.contact }}</td>
-                <td>
-                    <a href="{{ path('restaurant_show', {'id': restaurant.id}) }}">show</a>
-                    <a href="{{ path('restaurant_edit', {'id': restaurant.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+		<!-- Slider -->
+		<div id="main-slider" class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="{{asset("assets/img/slides/1.jpg")}}" alt=""/>
+					<div class="flex-caption">
+						<h3>Pour une réception réussie</h3>
+						<p>Vous êtes au bon endroit</p>
 
-    <a href="{{ path('restaurant_new') }}">Create new</a>
+					</div>
+				</li>
+				<li>
+					<img src="{{asset("assets/img/slides/2.jpg")}}" alt=""/>
+					<div class="flex-caption">
+						<h3>Nous préparons vos buffets</h3>
+						<p>Pour tout occasion</p>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- end slider -->
+		<section class="dishes">
+			<div class="container transparent">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="aligncenter">
+							<h2 class="aligncenter">Signature Dishes</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident,
+							<br/>doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</div>
+						<br/>
+					</div>
+				</div>
+
+				<div class="row service-v1 margin-bottom-40">
+					<div class="col-md-4 md-margin-bottom-40">
+						<div class="card small">
+							<div class="card-image">
+								<img class="img-responsive" src="{{asset("assets/img/service1.jpg")}}" alt="">
+								<span class="card-title">Cobb Salad</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+						<div class="card small">
+							<div class="card-image">
+								<img class="img-responsive" src="{{asset("assets/img/service2.jpg")}}" alt="">
+								<span class="card-title">Twinkies</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 md-margin-bottom-40">
+
+						<div class="card small">
+							<div class="card-image">
+								<img class="img-responsive" src="{{asset("assets/img/service2.jpg")}}" alt="">
+								<span class="card-title">Pot roast</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
 {% endblock %}
