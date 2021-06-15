@@ -19,11 +19,11 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/", name="restaurant_show", methods={"GET"})
+     * @Route("/menu1", name="menu1", methods={"GET"})
      */
 
-    public function show(): Response
+    public function menu1(): Response
     {
-        return $this->render('restaurant/show.html.twig');
+        return $this->render('restaurant/menu1.html.twig');
     }
 }

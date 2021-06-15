@@ -626,7 +626,7 @@ section.hero-text h1{
 /* page headline
 ==================================== */
 
-#inner-headline{background: #ffef0e;position: relative;margin: 0;padding: 0;color: #1891EC;border-top: 1px solid #ffffff;}
+#inner-headline{background: #363635;position: relative;margin: 0;padding: 30px;color: #1891EC;border-top: 1px solid #ffffff;}
 
 
 #inner-headline h2.pageTitle{
@@ -635,6 +635,7 @@ section.hero-text h1{
 	display:block;
 	text-align: center;
 	font-size: 30px;
+	margin-top: 60px;
 }
 
 /* --- breadcrumbs --- */

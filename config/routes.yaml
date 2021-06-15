@@ -4,4 +4,4 @@ home:
 
 # show:
 #     path: /show
-#     controller: App\Controller\RestaurantController::show
+#     controller: App\Controller\MenuController::show
