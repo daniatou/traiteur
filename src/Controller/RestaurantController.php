@@ -26,4 +26,47 @@ class RestaurantController extends AbstractController
     {
         return $this->render('restaurant/menu1.html.twig');
     }
+
+    /**
+     * @Route("/menu2", name="menu2", methods={"GET"})
+     */
+
+    public function menu2(): Response
+    {
+        return $this->render('restaurant/menu2.html.twig');
+    }
+    /**
+     * @Route("/menu3", name="menu3", methods={"GET"})
+     */
+
+    public function menu3(): Response
+    {
+        return $this->render('restaurant/menu3.html.twig');
+    }
+
+    /**
+     * @Route("/menu4", name="menu4", methods={"GET"})
+     */
+
+    public function menu4(): Response
+    {
+        return $this->render('restaurant/menu4.html.twig');
+    }
+
+    /**
+     * @Route("/menu5", name="menu5", methods={"GET"})
+     */
+
+    public function menu5(): Response
+    {
+        return $this->render('restaurant/menu5.html.twig');
+    }
+    /**
+     * @Route("/menu6", name="menu6", methods={"GET"})
+     */
+
+    public function menu6(): Response
+    {
+        return $this->render('restaurant/menu6.html.twig');
+    }
 }
