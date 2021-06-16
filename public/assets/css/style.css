@@ -60,12 +60,7 @@ input, button, select, textarea {
 	margin:0;
 	padding:0;
 }
-ul.withArrow{
-	
-}
-ul.withArrow li{
-	
-}
+
 ul.withArrow li span{
 	
 margin-right: 10px;
@@ -225,9 +220,7 @@ header  .navbar-nav > li > a {
     transition: all .3s ease;
 }
 
-.services{
-	
-}
+
 .dishes{
 	
 background: #ffef0e;
@@ -484,9 +477,7 @@ max-width: 100%;
 	padding:0;
 	margin:0;
 }
-.home-about .info-box{
-	
-}
+
 /* Testimonial
 ----------------------------------*/
 .testimonial-area {
@@ -768,8 +759,7 @@ form#commentform textarea {
 	text-align: justify;
 }
 
-.about-image img {
-}
+
 
 .about-text ul {
 	margin-top: 30px;
@@ -1251,7 +1241,7 @@ color: #fff;
 	color: #fff;
 } 
 .menuItem .menu{font-size:20px;font-weight:600;list-style:none;padding:0 0 15px;margin-bottom:20px;display:inline-block;color: #ffef0e;}
-.menuItem .menu li{padding: 34px 30px 34px;margin-bottom:20px;display:inline-block;width:100%;float:left;background: #f5cfbe;line-height: 30px;border-left: 2px solid #ffef0e;border-radius: 0 0 15px 0;}
+.menuItem .menu li{padding: 34px 30px 34px;margin-bottom:20px;display:inline-block;width:100%;background: #f5cfbe;line-height: 30px;border-left: 2px solid #ffef0e;border-radius: 0 0 15px 0;}
 .menuItem .detail{
 font-size:13px;
 color:#444;
@@ -1524,7 +1514,7 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
+
 
 .clear-marginbot{
 	margin-bottom:0;
@@ -1778,9 +1768,7 @@ padding-top: 3px;
 
 
 }
-.tab-section .col{
-	
-}
+
 .tab-section .container{
 	padding: 15px;
 	border: 1px solid #eaeaea;
@@ -1825,6 +1813,8 @@ span.color {
     margin-right: auto;
 	margin-top: 10px;
 	border-radius: 3px;
+	width:max-content;
+	
 }
 
 
