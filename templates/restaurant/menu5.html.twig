@@ -1,0 +1,120 @@
+{% extends 'base.html.twig' %}
+{% block title %}Menu 5
+{% endblock %}
+
+{% block body %}
+	<div id="wrapper">
+
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="pageTitle">Menu Mariage</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="about-logo">
+							<h3>Découvrez
+								<span class="color">Notre menu Mariage</span>
+							</h3>
+							<p>Pour une réception de mariage à thème, nous faisons diverses propositions telles que des plats exotiques, des buffets de salades pour l’entrée ou encore des spécialités végétariennes.</p>
+							<p>Toutes les dispositions sont prises en compte, y compris les demandes spéciales pour les personnes ayant des allergies.</p>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="gallery-1" class="content-block section-wrapper gallery-1">
+			<div
+				class="container">
+
+				<!-- /.gallery-filter -->
+
+
+				<div class="row">
+					<div id="isotope-gallery-container">
+						<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper petit_dejeuner">
+							<div class="gallery-item">
+								<div class="gallery-thumb">
+									<img src="{{asset("assets/img/works/2.jpg")}}" class="img-responsive" alt="2nd gallery Thumb">
+									<div class="image-overlay"></div>
+									<a href="{{asset("assets/img/works/2.jpg")}}" class="gallery-zoom">
+										<i class="fa fa-eye"></i>
+									</a>
+
+								</div>
+								<div class="gallery-details">
+									<div class="editContent">
+										<h5>1st gallery Item</h5>
+									</div>
+									<div class="editContent">
+										<p>Nullam id dolor id nibh ultricies vehicula.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper petit_dejeuner">
+							<div class="gallery-item">
+								<div class="gallery-thumb">
+									<img src="{{asset("assets/img/service2.jpg")}}" class="img-responsive" alt="2nd gallery Thumb">
+									<div class="image-overlay"></div>
+									<a href="{{asset("assets/img/service2.jpg")}}" class="gallery-zoom">
+										<i class="fa fa-eye"></i>
+									</a>
+
+								</div>
+								<div class="gallery-details">
+									<div class="editContent">
+										<h5>2nd gallery Item</h5>
+									</div>
+									<div class="editContent">
+										<p>Nullam id dolor id nibh ultricies vehicula.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper petit_dejeuner">
+							<div class="gallery-item">
+								<div class="gallery-thumb">
+									<img src="{{asset("assets/img/works/2.jpg")}}" class="img-responsive" alt="3rd gallery Thumb">
+									<div class="image-overlay"></div>
+									<a href="{{asset("assets/img/works/2.jpg")}}" class="gallery-zoom">
+										<i class="fa fa-eye"></i>
+									</a>
+
+								</div>
+								<div class="gallery-details">
+									<div class="editContent">
+										<h5>3rd gallery Item</h5>
+									</div>
+									<div class="editContent">
+										<p>Nullam id dolor id nibh ultricies vehicula.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- /.gallery-item-wrapper -->
+
+					</div>
+					<!-- /.isotope-gallery-container -->
+				</div>
+				<!-- /.row -->
+				<!-- /.container -->
+			</div>
+		</section>
+
+		<a href="{{ path('home') }}" type="button" class="btn btn-warning btn-menu" style="margin-bottom :10px">Commandez</a>
+	</div>
+{% endblock %}

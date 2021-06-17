@@ -60,12 +60,7 @@ input, button, select, textarea {
 	margin:0;
 	padding:0;
 }
-ul.withArrow{
-	
-}
-ul.withArrow li{
-	
-}
+
 ul.withArrow li span{
 	
 margin-right: 10px;
@@ -225,9 +220,7 @@ header  .navbar-nav > li > a {
     transition: all .3s ease;
 }
 
-.services{
-	
-}
+
 .dishes{
 	
 background: #ffef0e;
@@ -280,9 +273,10 @@ header .nav li .dropdown-menu li a {
 /* --- menu --- */
 .flex-caption p {
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 250;
     color: #ffffff;
     text-transform: capitalize;
+	font-family: 'Lora', serif;
 	
 }
 header .navigation {
@@ -400,7 +394,7 @@ left:0px;
 right:0px;
 }
 .flex-caption {zoom: 1;bottom: 198px;background-color: transparent;color: #fff;margin: 0;padding: 2px 25px 0px 30px;/* position: absolute; */left: 0;text-align: center;margin: 0 auto;right: 0px;display: inline-block;bottom: 10%;width: 50%;right: 0 !important;border-radius: 15px 15px 0 0;}
-.flex-caption h3 {color: #fff;letter-spacing: 0px;margin-bottom: 8px;text-transform: uppercase;font-size: 70px;font-weight: 700;}
+.flex-caption h3 {color: #fff;letter-spacing: 0px;margin-bottom: 8px;text-transform: uppercase;font-size: 70px;font-weight: 550;font-family: 'Lora', serif;}
 .flex-caption p {margin: 12px 0 18px;font-size: 20px;font-weight: 400;}
 .skill-home{
 margin-bottom:50px;
@@ -483,9 +477,7 @@ max-width: 100%;
 	padding:0;
 	margin:0;
 }
-.home-about .info-box{
-	
-}
+
 /* Testimonial
 ----------------------------------*/
 .testimonial-area {
@@ -625,7 +617,7 @@ section.hero-text h1{
 /* page headline
 ==================================== */
 
-#inner-headline{background: #ffef0e;position: relative;margin: 0;padding: 0;color: #1891EC;border-top: 1px solid #ffffff;}
+#inner-headline{background: #363635;position: relative;margin: 0;padding: 30px;color: #1891EC;border-top: 1px solid #ffffff;}
 
 
 #inner-headline h2.pageTitle{
@@ -634,6 +626,7 @@ section.hero-text h1{
 	display:block;
 	text-align: center;
 	font-size: 30px;
+	margin-top: 60px;
 }
 
 /* --- breadcrumbs --- */
@@ -762,12 +755,11 @@ form#commentform textarea {
 
 .about-text .btn {
 	margin-top: 20px;
-	//font-size: 15px;
-	//text-align: justify;
+	font-size: 15px;
+	text-align: justify;
 }
 
-.about-image img {
-}
+
 
 .about-text ul {
 	margin-top: 30px;
@@ -776,7 +768,6 @@ form#commentform textarea {
 
 .about-text li {
 	margin-bottom: 10px;
-	//
 	font-weight: bold;
 	list-style: none;
 }
@@ -1250,7 +1241,7 @@ color: #fff;
 	color: #fff;
 } 
 .menuItem .menu{font-size:20px;font-weight:600;list-style:none;padding:0 0 15px;margin-bottom:20px;display:inline-block;color: #ffef0e;}
-.menuItem .menu li{padding: 34px 30px 34px;margin-bottom:20px;display:inline-block;width:100%;float:left;background: #f5cfbe;line-height: 30px;border-left: 2px solid #ffef0e;border-radius: 0 0 15px 0;}
+.menuItem .menu li{padding: 34px 30px 34px;margin-bottom:20px;display:inline-block;width:100%;background: #f5cfbe;line-height: 30px;border-left: 2px solid #ffef0e;border-radius: 0 0 15px 0;}
 .menuItem .detail{
 font-size:13px;
 color:#444;
@@ -1476,6 +1467,7 @@ a.scrollup i:hover {
 
 .aligncenter{
 	text-align:center;
+	font-family: 'Lora', serif;
 }
 
 .aligncenter span{
@@ -1522,7 +1514,7 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
+
 
 .clear-marginbot{
 	margin-bottom:0;
@@ -1776,9 +1768,7 @@ padding-top: 3px;
 
 
 }
-.tab-section .col{
-	
-}
+
 .tab-section .container{
 	padding: 15px;
 	border: 1px solid #eaeaea;
@@ -1800,6 +1790,31 @@ span.color {
 }
 .alert-danger { 
     float: left;
+}
+.card.small.menu{
+	border-radius: 5%;
+	margin: 15px;
+	
+}
+.card.small.menu1{
+	border-radius: 3%;
+
+}
+.card-image{
+	border-top-left-radius: 5% 5%;
+	border-top-right-radius: 5% 5%;
+}
+.card-content{
+	font-size: medium;
+}
+.btn-menu{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 10px;
+	border-radius: 3px;
+	width:max-content;
+	
 }
 
 
