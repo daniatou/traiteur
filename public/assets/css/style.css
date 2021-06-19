@@ -660,7 +660,7 @@ ul.breadcrumb li a:hover {
 ============================= */
 
 /* --- contact form  ---- */
-form#contactform input[type="text"] {
+/* form#contactform input[type="text"] {
   width: 100%;
   border: 1px solid #f5f5f5;
   min-height: 40px;
@@ -734,7 +734,7 @@ form#commentform textarea {
 		-moz-border-radius: 2px 2px 2px 2px;
 			border-radius: 2px 2px 2px 2px;
 }
-
+ */
 
 /* --- search form --- */
 .search{
@@ -1816,6 +1816,8 @@ span.color {
 	width:max-content;
 	
 }
+
+
 
 
 

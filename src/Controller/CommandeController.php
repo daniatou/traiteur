@@ -26,7 +26,7 @@ class CommandeController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="commande_new", methods={"GET","POST"})
+     * @Route("/commande_new", name="commande_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -39,7 +39,7 @@ class CommandeController extends AbstractController
             $entityManager->persist($commande);
             $entityManager->flush();
 
-            return $this->redirectToRoute('commande_index');
+            return $this->redirectToRoute('home');
         }
 
         return $this->render('commande/new.html.twig', [
@@ -83,7 +83,7 @@ class CommandeController extends AbstractController
      */
     public function delete(Request $request, Commande $commande): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$commande->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $commande->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($commande);
             $entityManager->flush();

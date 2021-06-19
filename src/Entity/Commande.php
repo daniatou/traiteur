@@ -43,7 +43,7 @@ class Commande
     private $salle_reception;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string")
      */
     private $adresse_reception;
 
@@ -62,7 +62,7 @@ class Commande
      */
     private $menu;
 
-  
+
 
     public function getId(): ?int
     {
@@ -176,6 +176,4 @@ class Commande
 
         return $this;
     }
-
-
 }

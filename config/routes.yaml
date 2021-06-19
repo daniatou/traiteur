@@ -1,7 +1,7 @@
 home:
-    path: /home
+    path: /
     controller: App\Controller\RestaurantController::home
 
-# show:
-#     path: /show
-#     controller: App\Controller\MenuController::show
+commande_new:
+    path: /commande_new
+    controller: App\Controller\CommandeController::new
